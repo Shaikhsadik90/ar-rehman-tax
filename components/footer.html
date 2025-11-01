@@ -2,213 +2,209 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AR Rahman Tax Footer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Rahman Tax Footer</title>
 
-  <!-- ✅ Font Awesome (CDN - Working Version) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-bugzHEHgfqfNo3fMZLmyUPZyTTzmy2zHq9o9C0fsx1Ds5FckACdA0nWZ7NqPzq5z3PoHzH3PzqtXKmO1rXv3Qw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- ✅ Bootstrap (optional but helps structure stay aligned) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
-  <style>
-    /* ======= Footer Styling ======= */
-    .footer-section {
-      background-color: rgb(60, 42, 107);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      position: relative;
-      overflow: hidden;
-    }
+    <style>
+        /* Main Footer */
+        .footer-section {
+            background-color: rgb(60, 42, 107);
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            padding: 50px 0 0;
+        }
 
-    .footer-section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -50%;
-      width: 200%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #fbc02f, transparent);
-    }
+        /* Logo */
+        .footer-logo {
+            max-width: 220px;
+            transition: 0.3s;
+        }
 
-    /* Logo & Description */
-    .footer-logo {
-      max-width: 220px;
-      transition: transform 0.3s ease;
-    }
+        .footer-logo:hover {
+            transform: scale(1.05);
+        }
 
-    .footer-logo:hover {
-      transform: scale(1.05);
-    }
+        /* Heading */
+        .footer-heading {
+            font-size: 1.25rem;
+            color: #fbc02f;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
-    .footer-desc {
-      font-size: 0.95rem;
-      color: #ddd;
-      line-height: 1.7;
-    }
+        .footer-heading::after {
+            content: "";
+            width: 50px;
+            height: 2px;
+            background: #fbc02f;
+            display: block;
+            margin: 6px auto 0;
+        }
 
-    .highlight {
-      color: #fbc02f;
-      font-weight: 600;
-    }
+        /* Links */
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
 
-    /* Headings */
-    .footer-heading {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #fbc02f;
-      margin-bottom: 15px;
-      position: relative;
-    }
+        .footer-links a:hover {
+            color: #fbc02f;
+            transform: translateX(5px);
+        }
 
-    .footer-heading::after {
-      content: "";
-      width: 50px;
-      height: 2px;
-      background: #fbc02f;
-      display: block;
-      margin: 6px auto 0;
-    }
+        /* Contact */
+        .footer-contact {
+            font-size: 0.95rem;
+            color: #ddd;
+            margin-bottom: 8px;
+        }
 
-    /* Quick Links */
-    .footer-links li {
-      margin-bottom: 10px;
-    }
+        /* Social Icons */
+        .social-icons a {
+            font-size: 1.3rem;
+            margin: 0 10px;
+            color: white;
+            transition: 0.3s;
+        }
 
-    .footer-links a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease, transform 0.2s ease;
-      display: inline-block;
-    }
+        .social-icons a:hover {
+            transform: translateY(-3px);
+        }
 
-    .footer-links a:hover {
-      color: #fbc02f;
-      transform: translateX(3px);
-    }
+        .whatsapp:hover {
+            color: #25D366;
+        }
 
-    /* Contact Info */
-    .footer-contact {
-      margin: 4px 0;
-      color: #ddd;
-      font-size: 0.95rem;
-    }
+        .facebook:hover {
+            color: #1877f2;
+        }
 
-    /* Social Icons */
-    .social-icons a {
-      color: #fff;
-      font-size: 1.2rem;
-      margin: 0 8px;
-      display: inline-block;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
+        .instagram:hover {
+            color: #e4405f;
+        }
 
-    .social-icons a:hover {
-      transform: translateY(-3px);
-    }
+        .linkedin:hover {
+            color: #0a66c2;
+        }
 
-    .social-icons .whatsapp:hover {
-      color: #25D366;
-    }
+        /* Bottom Bar */
+        .footer-bottom {
+            background: rgba(45, 32, 86, 0.9);
+            padding: 15px 0;
+            color: #bbb;
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
 
-    .social-icons .facebook:hover {
-      color: #1877f2;
-    }
+        /* ✅ RESPONSIVE FIXES */
+        @media (max-width: 768px) {
+            .footer-logo {
+                max-width: 170px;
+                margin-bottom: 20px;
+            }
 
-    .social-icons .instagram:hover {
-      color: #E4405F;
-    }
+            .footer-section {
+                text-align: center;
+            }
 
-    .social-icons .linkedin:hover {
-      color: #0A66C2;
-    }
+            .footer-links a {
+                font-size: 1rem;
+            }
 
-    /* Bottom Bar */
-    .footer-bottom {
-      background-color: rgba(45, 32, 86, 0.9);
-      color: #bbb;
-      font-size: 0.9rem;
-      letter-spacing: 0.5px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
+            .footer-contact {
+                font-size: 1rem;
+            }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .footer-logo {
-        max-width: 180px;
-      }
+            .social-icons a {
+                font-size: 1.4rem;
+                margin: 0 12px;
+            }
+        }
 
-      .footer-heading::after {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  </style>
+        @media (max-width: 480px) {
+            .footer-heading {
+                font-size: 1.1rem;
+            }
+
+            .footer-contact,
+            .footer-links a {
+                font-size: 0.95rem;
+            }
+
+            .social-icons a {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- ======= Footer ======= -->
-  <footer class="footer-section">
-    <div class="container py-5">
-      <div class="row gy-4">
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-4">
 
-        <!-- Logo & About -->
-        <div class="col-md-4 text-center text-md-start">
-          <img src="artLogo_full.png" alt="AR Rahman Tax & Accounting" class="footer-logo mb-3" />
-          <p class="footer-desc">
-            Serving the community since <span class="highlight">1998</span>.<br>
-            Your trusted partner for <strong>Tax, Accounting & Business Solutions</strong> across GTA and beyond.
-          </p>
+                <!-- Logo & Details -->
+                <div class="col-md-4 text-center text-md-start">
+                    <img src="img/artLogo_full.png" class="footer-logo mb-3" alt="">
+                    <p class="footer-desc">
+                        Serving the community since <b style="color:#fbc02f;">1998</b>.<br>
+                        Trusted partner for <b>Tax, Accounting & Business Solutions</b>.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <div class="footer-links text-center">
+                        <a href="index.html"><i class="fas fa-home me-2"></i>Home</a>
+                        <a href="services.html"><i class="fas fa-briefcase me-2"></i>Our Services</a>
+                        <a href="careers.html"><i class="fas fa-user-tie me-2"></i>Careers</a>
+                        <a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact Us</a>
+                        <a href="faqs.html"><i class="fas fa-question-circle me-2"></i>FAQs</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="footer-heading">Contact</h5>
+                    <p class="footer-contact"><i class="fas fa-phone-alt me-2"></i>416-999-4448 | 1-888-7TAX-TAX</p>
+                    <p class="footer-contact"><i class="fas fa-envelope me-2"></i>info@arrahmantax.com</p>
+
+                    <div class="social-icons mt-3">
+                        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <!-- Quick Links -->
-        <div class="col-md-4 text-center">
-          <h5 class="footer-heading"><i class="fas fa-link me-2"></i>Quick Links</h5>
-          <ul class="footer-links list-unstyled">
-            <li><a href="index.html"><i class="fas fa-home me-2"></i>Home</a></li>
-            <li><a href="services.html"><i class="fas fa-briefcase me-2"></i>Our Services</a></li>
-            <li><a href="careers.html"><i class="fas fa-user-tie me-2"></i>Careers</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact Us</a></li>
-            <li><a href="faqs.html"><i class="fas fa-question-circle me-2"></i>FAQs</a></li>
-          </ul>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom text-center py-3">
+            <p>©️ 2025 AR Rahman Tax & Accounting Services. All rights reserved.</p>
+            <div class="disclaimer">
+                Information on this site is for general purposes only and is not tax, accounting, or legal advice.
+                Use of this site does not create a client relationship. Services are provided only after formal
+                engagement. Tax results are subject to CRA review and may vary based on individual circumstances.
+                For personalized advice, please contact <a href="contact.html">us directly</a>.
+            </div>
         </div>
+    </footer>
 
-        <!-- Contact Info -->
-        <div class="col-md-4 text-center text-md-end">
-          <h5 class="footer-heading"><i class="fas fa-headset me-2"></i>Contact</h5>
-          <p class="footer-contact"><i class="fas fa-phone-alt me-2"></i>416-999-4448 | 1-888-7TAX-TAX</p>
-          <p class="footer-contact"><i class="fas fa-envelope me-2"></i>info@arrahmantax.com</p>
-          <div class="social-icons mt-3">
-            <a href="https://wa.me/14169994448" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom text-center py-3">
-      <p>©️ 2025 AR Rahman Tax & Accounting Services. All rights reserved.</p>
-      <div class="disclaimer">
-        Information on this site is for general purposes only and is not tax, accounting, or legal advice.
-        Use of this site does not create a client relationship. Services are provided only after formal
-        engagement. Tax results are subject to CRA review and may vary based on individual circumstances.
-        For personalized advice, please contact <a href="contact.html">us directly</a>.
-      </div>
-      </div>
-  </footer>
-
-  <script>
-    // Auto year update
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
 </body>
 
