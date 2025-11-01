@@ -1,0 +1,22 @@
+.col-md-4 p {
+    color:white;
+}
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:rgb(250, 194, 47);
+}
+.header{
+    background-color: rgb(60, 42, 107); /* PURPLE */
+    color: rgb(251,192,47); /*YELLOW */
+    text-align: center;
+    height: 32px;
+}
+footer{
+    text-align: center;
+    font-weight: lighter;
+    background-color: rgb(60, 42, 107); /* PURPLE */
+    color: rgb(251,192,47); /*YELLOW */
+    width: 100%;
+}

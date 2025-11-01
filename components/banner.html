@@ -1,0 +1,115 @@
+<style>
+    /* 🌟 Top Banner */
+    .top-banner {
+      background-color: rgb(60, 42, 107);
+      color: #fff;
+      padding: 15px 0;
+    }
+    
+    /* Logo */
+    .banner-logo {
+      max-width: 260px; /* Increased from 220px */
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .banner-logo:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Text Section */
+    .banner-text p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    
+    .banner-text .highlight {
+      color: rgb(250, 194, 47);
+      font-weight: 600;
+    }
+    
+    /* Contact Section */
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin-right: 30px; /* ✅ Shifted more to right */
+      text-align: right;  /* ✅ Right-aligned text */
+    }
+    
+    .contact-list li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    
+    .contact-list a {
+      color: rgb(251, 192, 47);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-list a:hover {
+      color: #fff;
+    }
+    
+    /* Language link */
+    .lang-link {
+      color: #ff6347 !important;
+      font-weight: 500;
+    }
+    
+    .lang-link:hover {
+      color: #ffd699 !important;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .banner-logo {
+        max-width: 180px;
+      }
+    
+      .banner-text p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    
+      .contact-list {
+        text-align: center;
+        margin-right: 0;
+      }
+    }
+    </style>
+    
+    <!-- 🌟 Top Banner -->
+    <div class="top-banner container-fluid py-3">
+      <div class="row align-items-center text-white text-center text-md-start">
+        
+        <!-- Logo -->
+        <div class="col-md-4 mb-3 mb-md-0 text-center">
+          <a href="index.html">
+            <img src="artLogo_full.png" class="banner-logo img-fluid" alt="AR Rahman Tax Logo">
+          </a>
+        </div>
+    
+        <!-- Middle Text -->
+        <div class="col-md-4 banner-text">
+          <p class="mb-0">
+            We are thankful to thousands of our clients across
+            our GTA-wide offices who have chosen our services
+            from the year <span class="highlight">1998 to-date</span>.
+          </p>
+        </div>
+    
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <ul class="contact-list mb-0">
+            <li><strong>📞 Call Us:</strong></li>
+            <li><a href="tel:4169994448">416 999 4448</a></li>
+            <li><a href="tel:18887982989">1-888-7TAX-TAX</a></li>
+            <li><a href="faqs.html#language" class="lang-link">We speak your language</a></li>
+          </ul>
+        </div>
+    
+      </div>
+    </div>
+    

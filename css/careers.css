@@ -1,0 +1,161 @@
+/* General Page Styling */
+body {
+    background-color: #f8f9fc;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    background-color: rgb(60, 42, 107); /* Purple */
+    color: rgb(251, 192, 47); /* Yellow */
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 4px solid rgb(251, 192, 47);
+  }
+  
+  /* Sub-Headers (Job Titles) */
+  .header1 {
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, rgb(60, 42, 107), rgb(100, 100, 100));
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .header1:hover {
+    background: linear-gradient(90deg, rgb(80, 60, 150), rgb(40, 30, 80));
+    color: rgb(251, 192, 47);
+    transform: scale(1.02);
+  }
+  
+  /* Job Description Container */
+  details {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 18px 22px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid rgb(251, 192, 47);
+  }
+  
+  details:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+  }
+  
+  details p, details ul, details li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Bullet List */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+    color: rgb(250, 194, 47);
+  }
+  
+  /* Email Links */
+  a {
+    color: rgb(60, 42, 107);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(251, 192, 47);
+    text-decoration: underline;
+  }
+  
+  /* Google Form Button */
+  .apply-btn {
+    display: inline-block;
+    background-color: rgb(251, 192, 47);
+    color: rgb(60, 42, 107);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .apply-btn:hover {
+    background-color: rgb(60, 42, 107);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* ===== Footer Fixes ===== */
+
+/* Footer Container */
+footer {
+  text-align: center;
+  font-weight: 500;
+  background-color: rgb(60, 42, 107);
+  color: rgb(251, 192, 47);
+  padding: 20px 0;
+  width: 100%;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+}
+
+/* Footer Logo */
+footer img.footer-logo {
+  width: 120px; /* 🔹 Decrease size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer Quick Links Section */
+footer .footer-links h5 {
+  color: white; /* 🔹 Title color (e.g. "Quick Links") */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  color: white; /* 🔹 Link text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: rgb(251, 192, 47); /* Hover highlight */
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  footer img.footer-logo {
+    width: 90px;
+  }
+
+  .header {
+    font-size: 1.3rem;
+  }
+
+  .header1 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  details {
+    padding: 15px;
+  }
+}

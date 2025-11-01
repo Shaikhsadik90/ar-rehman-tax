@@ -1,0 +1,203 @@
+.col-md-4 p {
+    color: white;
+  }
+  ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(250, 194, 47);
+  }
+ 
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefae0;
+    color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Responsive header */
+  header {
+    background: linear-gradient(to right, #fbc02d, #3c2a6b);
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+  }
+  
+  section {
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  @media (max-width: 576px) {
+    section {
+      padding: 15px;
+      margin: 15px auto;
+    }
+  }
+  
+  h2 {
+    color: #3c2a6b;
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .job-listing, .details, .free-workshop, .opportunities, .seminar-invite, .team-section, .registration-section {
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding-left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    ul {
+      padding-left: 20px;
+    }
+  }
+  
+  .highlight {
+    color: #fbc02d;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #3c2a6b;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 40px;
+  }
+  
+  .team-section h2 {
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .team-member {
+    background-color: #fff9c4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .team-member h3 {
+    margin-bottom: 5px;
+    color: #3c2a6b;
+  }
+  
+  .team-member p {
+    margin: 0;
+  }
+  
+  /* Improve animated strip responsiveness */
+  .animated-strip {
+    background-color: #fbc02d;
+    color: #3c2a6b;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    animation: pulse 2s infinite;
+  }
+  
+  @media (max-width: 576px) {
+    .animated-strip {
+      padding: 10px 5px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .register-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3c2a6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: white;
+    color: #3c2a6b;
+  }
+  
+  @media (max-width: 576px) {
+    .register-button {
+      padding: 8px 15px;
+      font-size: 14px;
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+      margin: 10px auto 0;
+      display: block;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { background-color: #fbc02d; }
+    50% { background-color: #ffe082; }
+  }
+  
+  /* Improve top banner responsiveness */
+  @media (max-width: 768px) {
+    .col-md-4 p {
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+    ul.no-bullets {
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Fix social media buttons on mobile */
+  @media (max-width: 576px) {
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+    .btn-group .btn {
+      margin: 2px;
+    }
+  }

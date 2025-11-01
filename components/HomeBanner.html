@@ -1,0 +1,170 @@
+<!-- ======= Home Banner (Updated Version) ======= -->
+<style>
+  /* ---------- Banner Section ---------- */
+  .home-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 237, 190);
+    padding: 20px 60px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #f1b100;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  /* Logo */
+  .banner-logo {
+    height: 85px;
+    max-width: 100%;
+  }
+
+  /* Middle text */
+  .banner-center {
+    flex: 1;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .banner-text {
+    font-size: 15px;
+    margin: 0;
+    color: #000;
+    line-height: 1.4;
+  }
+
+  .banner-quote {
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .highlight-year {
+    color: #FF6347;
+    font-weight: bold;
+  }
+
+  .highlight-number {
+    color: red;
+    font-family: "Brush Script MT", cursive;
+    font-size: 1.6em;
+  }
+
+  /* Right side */
+  .banner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  .contact-info li {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  .call-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .call-link:hover {
+    color: #007bff;
+  }
+
+  .language-link {
+    color: green;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .language-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  .btn-appoint {
+    background-color: #f1b100;
+    color: #000;
+    border-radius: 25px;
+    padding: 8px 22px;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  .btn-appoint:hover {
+    background-color: #d99a00;
+    color: #fff;
+  }
+
+  /* Responsive fix */
+  @media (max-width: 768px) {
+    .home-banner {
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .banner-right {
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .banner-logo {
+      height: 70px;
+    }
+  }
+</style>
+
+
+<section class="home-banner">
+  <!-- Left: Logo -->
+  <div class="banner-left">
+    <a href="index.html">
+      <img src="artLogo_full.png" alt="AR Rahman Tax & Accounting" class="banner-logo">
+    </a>
+  </div>
+
+  <!-- Middle: Text -->
+  <div class="banner-center">
+    <p class="banner-text">
+      <b>We are thankful to thousands of our clients across our GTA wide offices, who have chosen our services from the year 
+        <span class="highlight-year">1998 to-date</span></b>
+    </p>
+    <p class="banner-quote">
+      <b><i>We have prepared </i>
+        <span class="highlight-number">77,000+</span>
+        <i> tax returns till to-date.</i></b>
+    </p>
+  </div>
+
+  <!-- Right: Contact + Button -->
+  <div class="banner-right">
+    <ul class="contact-info">
+      <li><b>Call:</b> 
+        <a href="tel:4169994448" class="call-link">416 999 4448</a>, 
+        <a href="tel:18887729829" class="call-link">1-888-7TAX-TAX</a>
+      </li>
+      <li>
+        <a href="faqs.html#language" class="language-link">We speak your language</a>
+      </li>
+    </ul>
+    <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" class="btn-appoint">
+      📅 Book Appointment
+    </a>
+  </div>
+</section>

@@ -1,0 +1,1133 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AR Rahman Tax - Locations</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<!-- Font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="/css/locations.css">
+    <style>
+          :root {
+            --primary-color: #4B0082;
+            --secondary-color: #f0e6ff;
+            --text-color: #333;
+            --accent-color: #d8ffcc;
+          }
+
+          body {
+            overflow-x: hidden;
+          }
+
+          .contact-card {
+            background: #fff;
+            border-left: 8px solid var(--primary-color);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .location-header {
+            text-align: left;
+            margin-bottom: 20px;
+          }
+
+          .company-name h4 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 5px;
+          }
+
+          .company-name span {
+            font-size: 16px;
+            color: #555;
+          }
+
+          .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .info-block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 10px;
+          }
+
+          .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+          }
+          
+          .info-item i {
+            width: 20px;
+            text-align: center;
+            color: var(--primary-color);
+          }
+
+          .executives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 8px;
+            padding-left: 10px;
+          }
+
+          .executive-name {
+            font-weight: bold;
+          }
+
+          .executive-role {
+            font-size: 14px;
+            color: #555;
+          }
+
+          .staff-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 10px;
+          }
+
+          .staff-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 15px;
+          }
+          
+          .staff-row i {
+            color: var(--primary-color);
+          }
+
+          .staff-title {
+            background-color: #FFEB3B;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+          }
+          
+          .header {
+            color: white;
+            text-align: center;
+            margin: 30px 0;
+            font-weight: bold;
+          }
+          
+          table {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            border-collapse: collapse;
+          }
+          
+          table th, table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+          }
+          
+          table th {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-align: center;
+          }
+          
+          iframe {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+          
+          .vid2 {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+          }
+          
+          .vid2 video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+          }
+          
+         
+          
+          .email-link, .staff-row a {
+            color: #0E91D3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+          }
+          
+          .email-link:hover, .staff-row a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+          }
+       .disclaimer {
+  font-size: 10px;
+   font-style: italic;
+  background-color: #fff3cd;
+   text-decoration: underline;
+  color: #856404;
+  padding: 10px 15px;
+  border: 1px solid #ffeeba;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+
+
+
+          @media (max-width: 768px) {
+            .executives-grid {
+              grid-template-columns: 1fr;
+            }
+            
+            .staff-row {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            
+            .contact-card {
+              padding: 15px;
+            }
+            
+            iframe {
+              height: 300px !important;
+            }
+          }
+        </style>
+	</head>
+	<body>			
+		<div id="banner"></div>
+		<div id="navbar"></div>
+
+	<!-- Body -->
+	<div class="container">
+		<h4 class="header" >Our Office Locations</h4>
+<!-- Important Office Update -->
+<div role="alert" aria-live="polite" aria-atomic="true"
+     style="background-color:#f8d7da; border:1px solid #f5c6cb; color:#721c24; padding:16px; border-radius:6px; display:flex; gap:12px; align-items:flex-start; font-family:Arial, sans-serif; width:100%; box-sizing:border-box;">
+  <!-- subtle warning icon (SVG) -->
+  <svg width="45" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+       style="flex:0 0 24px; margin-top:2px;">
+    <path fill="#d80000" d="M1 21h22L12 2 1 21zm13-3h-4v-2h4v2zm0-4h-4v-4h4v4z"/>
+  </svg>
+
+
+
+ <div>
+  <strong style="display:block; margin-bottom:6px; font-size:1rem;">Important Office Update</strong>
+
+  <p style="margin:0 0 6px 0; line-height:1.35;">
+  </p>
+
+  <p style="margin:0 0 6px 0; line-height:1.35; color:#c0392b; font-weight:bold;">
+    ⚠️ Please note: The <u>Keele &amp; Finch</u> office is <strong>closed today until further notice.</strong>
+  </p>
+
+  <p style="margin:0; line-height:1.35;">
+    In-person services also continue to be available at our <strong>Scarborough office</strong>.
+  </p>
+</div>
+
+
+
+</div>
+
+
+<!-- Notice: Civic Holiday & Labour Day -->
+<div class="alert text-center my-3" role="alert" 
+     style="background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 15px; border-radius: 5px;">
+  <i class="fas fa-info-circle me-2" style="color:#856404;"></i>
+  <strong>Notice:</strong> 
+  Please be informed that on <u>Monday, October 13, 2025</u> will be observed as <strong>Thanksgiving Day</strong> in Canada. 
+  Our offices will resume operations on <strong>Tuesday, October 14, 2025</strong>.
+</div>
+
+
+
+    	<div class="row">
+      <div class="col-md-12">
+        
+        <!-- 
+        <p style="color:black;font-size:18px;text-align: center;"><b>*Hours Update: Starting Monday May 5, Operating hours for the <u>Scarborough Office</u> will be from Monday to Saturday, 9am-5pm<br>and <u>Finch/ Keele Office</u> will be from Tuesday to Saturday, 11am-6pm.</b></p>
+        -->
+
+        <!-- 
+        <p style="color:red;font-size:22px;text-align: center;"><b>Through the Winter Holidays, our Offices will be CLOSED from December 23rd, 2024 to January 11th, 2025.</b></p>
+		-->
+        <!-- 
+        <p><i>* We can still accept any concerns as our remote office team is on duty and will remain available throughout the Office Closure excluding Public Holidays.
+        <br>- Please call us 416-999-4448 / 647-348-9091 <u>or</u> Email us via <a href="mailto:managerregion.4@arrahmantax.com">managerregion.4@arrahmantax.com</a>.</i><p>
+		-->
+
+      <hr>
+      </div>
+    </div>
+    
+	
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<ul class="list-group list-group-horizontal-md justify-content-center flex-wrap">
+				<li class="nav-item">
+					<a class="nav-link active" href="#scr" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Scarborough</a>
+				</li>
+				<!--
+				<li class="nav-item">
+					<a class="nav-link active" href="#ydm" style="color:#0E91D3;font-size:14px">Yorkdale</a>
+				</li>
+				-->
+				<li class="nav-item">
+					<a class="nav-link active" href="#fch" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Finch/ Keele</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#ros" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Roseneath</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#mis" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Mississauga</a>
+				</li>
+            </ul>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+  
+  <div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<ul class="list-group list-group-horizontal-md justify-content-center flex-wrap">
+				<li class="nav-item">
+					<a class="nav-link active" href="#phl" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Philippines</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link active" href="#mrc" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Morocco</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link active" href="#pak" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Pakistan</a>
+				</li>
+        
+				<!-- <li class="nav-item">
+					<a class="nav-link active" href="#boc" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>Bogota, Colombia</a>
+				</li> -->
+        	</li>
+                <li class="nav-item">
+					<a class="nav-link active" href="#ind" style="color:#0E91D3;font-size:14px"><i class="fas fa-map-marker-alt me-1"></i>India</a>
+				</li>
+            </ul>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+		
+		<hr>
+		
+		<!-- Scarborough Office -->
+		<div class="row align-items-center" id="scr">
+		<p></p>
+		<div class="col-md-1"></div>
+		<div class="col-md-5">
+          <div class="contact-card">
+            <div class="location-header">
+              <div class="company-name">
+                    <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+                <h4><i class="fas fa-building me-2"></i>AR RAHMAN Tax & Accounting</h4>
+                <span>Services, Scarborough</span>
+              </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-map-marked-alt"></i> Office Information</div>
+            <div class="info-block">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i> 695 Markham Rd #34, Scarborough, ON M1H 2A5</div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-phone-alt"></i> Contact</div>
+            <div class="info-block">
+              <div class="info-item"><i class="fas fa-mobile-alt"></i> 416 - 999 - 4448 (cell)</div>
+              <div class="info-item"><i class="fas fa-phone"></i> 647 - 348 - 9091</div>
+              <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+            <div class="executives-grid">
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>KANZA BATOOL</span><br/>
+                <span class="executive-role">Acting Director 1</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>IRHA ALI</span><br/>
+                <span class="executive-role">Director Operations and ARA</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Zenab Ali</span><br/>
+                <span class="executive-role">Director Training and Internal Controls</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Abdul Rehman</span><br/>
+                <span class="executive-role">Acting Director 2</span>
+              </div>
+            </div>
+
+            <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+            <div class="staff-grid">
+              <div class="staff-row">
+                <i class="fas fa-at"></i>
+                <strong>General:</strong>
+                <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+              </div>
+              <div class="staff-row">
+                <!-- <i class="fas fa-user-circle"></i>
+                <strong>Shanice W.</strong>
+                <span class="staff-title">Office Admin Sup.</span>
+                <a href="mailto:shanice@arrahmantax.com?subject=Query%20for%20Office%20Admin">shanice@arrahmantax.com</a> -->
+              </div>
+              
+            </div>
+          </div>
+          <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i></p>
+		</div>
+		<div class="col-md-5">
+      <!-- <p style="color: red; text-align: center; font-weight: bold;">
+  <i class="fas fa-exclamation-triangle me-1"></i>
+ Please Notice: Our <u>Scarborough</u> office will be closed on Monday, July 1<sup>st</sup></> in observance of <u>Canada Day</u>
+
+</p> -->
+
+		
+			<table style="width:100%;max-width:300px;margin-left: auto;margin-right: auto">		
+				<tr>
+					<th colspan="2"><i class="far fa-clock me-1"></i>Hours of Operation:</th>
+				</tr>
+              			
+				<!-- Holiday Notice 
+				<tr>
+					<th colspan="2" style="color:red">*Closed Remembrance Day, NOV 11</th>
+				</tr>
+				-->
+
+                
+				<tr>
+					<td><i ></i>Monday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i ></i>Tuesday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i ></i>Wednesday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i ></i>Thursday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i ></i>Friday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i></i>Saturday</td>
+					<td>9:00 am - 5:00 pm</td>
+				</tr>
+				<tr>
+					<td><i ></i>Sunday</td>
+                    <td><b>CLOSED</b></td>
+				</tr>
+				
+              
+                <!-- Holiday Notice
+				<tr>
+                  <td><i>*<b>CLOSED</b>; re-opens JAN 13, 2025</i></td>
+				</tr>
+                -->
+              
+			</table>
+			<p></p>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	
+	
+
+	<!-- Finch/Keele Office  -->
+<div class="row align-items-center" id="fch">
+  <p></p>
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    
+   <div role="alert" aria-live="polite" aria-atomic="true"
+     style="background-color:#d1ecf1; border:1px solid #bee5eb; color:#0c5460; padding:15px; border-radius:6px; margin-bottom:15px; font-family:Arial, sans-serif;">
+  <i class="fas fa-info-circle me-2" style="color:#17a2b8;"></i>
+  <strong>Revised Office Hours Announcement</strong>
+  <br><br>
+  Please be advised of our updated office hours for in-person services:
+  <ul style="margin-bottom:0; margin-top:8px;">
+    <li><strong>Keele &amp; Finch Office:</strong> Monday to Friday, 11:00 AM – 5:00 PM</li>
+    <li><strong>Scarborough Office:</strong> Services continue as scheduled.</li>
+  </ul>
+</div>
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, Finch/Keele</span>
+        </div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i> 1315 Finch Ave W #211, North York, ON M3J 2G6</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 901 - 4560</div>
+        <div class="info-item"><i class="fas fa-phone-alt"></i> 647 - 327 - 2000</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+      <div class="executives-grid">
+        <div>
+          <span class="executive-name"><i class="fas fa-user-circle me-1"></i>KANZA BATOOL</span><br />
+          <span class="executive-role">Acting Director 1</span>
+        </div>
+        <div>
+          <span class="executive-name"><i class="fas fa-user-circle me-1"></i>IRHA ALI</span><br />
+          <span class="executive-role">Director Operations and ARA</span>
+        </div>
+        <div>
+          <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Zenab Ali</span><br />
+          <span class="executive-role">Director Training and Internal Controls</span>
+        </div>
+        <div>
+          <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Abdul Rehman</span><br />
+          <span class="executive-role">Acting Director 2</span>
+        </div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+      <div class="staff-grid">
+        <div class="staff-row">
+          <i class="fas fa-at"></i>
+          <strong>General:</strong>
+          <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+        </div>
+        <!-- <div class="staff-row">
+          <i class="fas fa-user-circle"></i>
+          <strong>Shanice W.</strong>
+          <span class="staff-title">Office Admin Sup.</span>
+          <a href="mailto:shanice@arrahmantax.com?subject=Query%20for%20Office%20Admin">shanice@arrahmantax.com</a> 
+        </div> -->
+      </div>
+    </div>
+
+    <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i><br><span style="font-size:11px">- Ticket validation required, see Front Desk for details</span></p>
+
+    <p><u>Directions video:</u></p>
+    <div class="vid2" style="width: 99.9%">
+      <video class="embed-responsive-item" controls>
+        <source src="vid/fch_directions.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="col-md-5">
+    <!-- <p style="color: red; text-align: center; font-weight: bold;">
+      <i class="fas fa-exclamation-triangle me-1"></i>
+      <strong>Important Notice:</strong> The <u>Finch/Keele office</u> will remain <b>closed on Saturdays, Sundays, and Mondays for the next 3 weeks</b>. It will remain <b>open from Tuesday to Friday</b> between <b>11:00 AM and 6:00 PM</b>.
+    </p>  -->
+
+    <table style="width:100%;max-width:300px;margin-left: auto;margin-right: auto">		
+      <tr>
+        <th colspan="2"><i class="far fa-clock me-1"></i>Hours of Operation:</th>
+      </tr>
+
+      <tr>
+        <td>Monday</td>
+        <td><b>11:00 am - 5:00 pm</b></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>11:00 am - 5:00 pm</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>11:00 am - 5:00 pm</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>11:00 am - 5:00 pm</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>11:00 am - 5:00 pm</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td><b>CLOSED</b></td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td><b>CLOSED</b></td>
+      </tr>
+    </table>
+    <p></p>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+
+		
+		<hr>
+		
+		<!-- Roseneath Office -->
+		<div class="row align-items-center" id="ros">
+			<p></p>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+              <div class="contact-card">
+                <div class="location-header">
+                  <div class="company-name">
+                     <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+                    <h4>AR RAHMAN Tax & Accounting</h4>
+                    <span>Services, Roseneath</span>
+                  </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-map-marker-alt"></i> 377 Montgomery Rd, Roseneath, ON K0K 2X0</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+                   <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+                <div class="executives-grid">
+                  <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>KANZA BATOOL</span><br/>
+                <span class="executive-role">Acting Director 1</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>IRHA ALI</span><br/>
+                <span class="executive-role">Director Operations and ARA</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Zenab Ali</span><br/>
+                <span class="executive-role">Director Training and Internal Controls</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Abdul Rehman</span><br/>
+                <span class="executive-role">Acting Director 2</span>
+              </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+                <div class="staff-grid">
+                  <div class="staff-row">
+                     <i class="fas fa-at"></i>
+                <strong>General:</strong>
+                <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+              </div>
+              <div class="staff-row">
+                <!-- <i class="fas fa-user-circle"></i>
+                <strong>Shanice W.</strong>
+                <span class="staff-title">Office Admin Sup.</span>
+                <a href="mailto:shanice@arrahmantax.com?subject=Query%20for%20Office%20Admin">shanice@arrahmantax.com</a> -->
+                </div>
+                </div>
+              </div>
+                            <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i></p>
+
+			</div>
+			<div class="col-md-5">
+				<table style="width:300px;margin-left: auto;margin-right: auto">		
+					<tr>
+						<th>Hours of Operation:</th>
+					</tr>
+					<tr>
+						<td><i>*With Appointments <u>Only</u></i></td>
+					</tr>
+				</table>
+				<p></p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		
+		<hr>
+		
+		<!-- Mississauga Office -->
+		<div class="row align-items-center" id="mis">
+			<p></p>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+              <div class="contact-card">
+                <div class="location-header">
+                  <div class="company-name">
+                     <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+                    <h4>AR RAHMAN Tax & Accounting</h4>
+                    <span>Services, Mississauga</span>
+                  </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-map-marker-alt"></i> 1965 Britannia Rd W #204, Mississauga, ON L5M 4Y4</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+                   <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+                <div class="executives-grid">
+                 <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>KANZA BATOOL</span><br/>
+                <span class="executive-role">Acting Director 1</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>IRHA ALI</span><br/>
+                <span class="executive-role">Director Operations and ARA</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Zenab Ali</span><br/>
+                <span class="executive-role">Director Training and Internal Controls</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Abdul Rehman</span><br/>
+                <span class="executive-role">Acting Director 2</span>
+              </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+                <div class="staff-grid">
+                  <div class="staff-row">
+                    <i class="fas fa-at"></i>
+                <strong>General:</strong>
+                <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+              </div>
+              <div class="staff-row">
+                <!-- <i class="fas fa-user-circle"></i>
+                <strong>Shanice W.</strong>
+                <span class="staff-title">Office Admin Sup.</span>
+                <a href="mailto:shanice@arrahmantax.com?subject=Query%20for%20Office%20Admin">shanice@arrahmantax.com</a> -->
+                </div>
+                </div>
+              </div>
+                            <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i></p>
+
+			</div>
+			<div class="col-md-5">
+				<table style="width:300px;margin-left: auto;margin-right: auto">		
+					<tr>
+						<th>Hours of Operation:</th>
+					</tr>
+					<tr>
+						<td><i>*With Appointments <u>Only</u></i></td>
+					</tr>
+				</table>
+				<p></p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		
+		<hr>
+		
+		<!-- Philippines Office -->
+		<div class="row align-items-center" id="phl">
+			<p></p>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+              <div class="contact-card">
+                <div class="location-header">
+                  <div class="company-name">
+                     <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+                    <h4>AR RAHMAN Tax & Accounting</h4>
+                    <span>Services, Philippines</span>
+                  </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-map-marker-alt"></i> Blk 8 Lot 17 Ph 6 fairburn st, Governors Hills. General Trias, Cavite 4107</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+                   <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+                <div class="executives-grid">
+                  <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>KANZA BATOOL</span><br/>
+                <span class="executive-role">Acting Director 1</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>IRHA ALI</span><br/>
+                <span class="executive-role">Director Operations and ARA</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Zenab Ali</span><br/>
+                <span class="executive-role">Director Training and Internal Controls</span>
+              </div>
+              <div>
+                <span class="executive-name"><i class="fas fa-user-circle me-1"></i>Abdul Rehman</span><br/>
+                <span class="executive-role">Acting Director 2</span>
+              </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+                <div class="staff-grid">
+                  <div class="staff-row">
+                     <i class="fas fa-at"></i>
+                <strong>General:</strong>
+                <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+              </div>
+              <div class="staff-row">
+                <!-- <i class="fas fa-user-circle"></i>
+                <strong>Shanice W.</strong>
+                <span class="staff-title">Office Admin Sup.</span>
+                <a href="mailto:shanice@arrahmantax.com?subject=Query%20for%20Office%20Admin">shanice@arrahmantax.com</a> -->
+              </div>
+                </div>
+              </div>
+                           <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i></p>
+
+			</div>
+			<div class="col-md-5">
+				<table style="width:300px;margin-left: auto;margin-right: auto">		
+					<tr>
+						<th>Hours of Operation:</th>
+					</tr>
+					<tr>
+						<td><i>*With Appointments <u>Only</u></i></td>
+					</tr>
+				</table>
+				<p></p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+      
+      	<hr>
+		
+		
+     <p></p>
+    	<!-- Morocco Office -->
+		<div class="row align-items-center" id="mrc">
+			<p></p>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+              <div class="contact-card">
+                <div class="location-header">
+                  <div class="company-name">
+                     <p class="disclaimer"> No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+                    <h4>AR RAHMAN Tax & Accounting</h4>
+                    <span>Services, Morocco</span>
+                  </div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+                <div class="info-block">
+                  <div class="info-item"><i class="fas fa-map-marker-alt"></i> 99 Rue Pierre Parent, 5th floor N10, Casablanca, Morocco</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+                <div class="info-block">
+               <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+                   <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+                </div>
+
+                <div class="section-title"><i class="fas fa-user-tie"></i> Key Executives</div>
+                <div class="executives-grid">
+                  <div>
+               <span class="executive-name"><i class="fas fa-user-circle me-1"></i>NOUREDDINE</span><br/>
+                <span class="executive-role">Branch Head</span>
+              </div>
+             
+                </div>
+
+                <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+                <div class="staff-grid">
+                  <div class="staff-row">
+                     <i class="fas fa-at"></i>
+                <strong>General:</strong>
+                <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">Admin@arrahmantax.com</a>
+              </div>
+              
+                </div>
+              </div>
+                <p style="color:red"><i><i class="fas fa-parking me-1"></i>Free parking available!</i></p>
+			</div>
+			<div class="col-md-5">
+				<table style="width:300px;margin-left: auto;margin-right: auto">		
+					<tr>
+						<th>Hours of Operation:</th>
+					</tr>
+					<tr>
+						<td><i>*With Appointments <u>Only</u></i></td>
+					</tr>
+				</table>
+				<p></p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+    <hr>
+      <p></p>
+    <!-- Pakistan Office -->
+<div class="row align-items-center" id="pak">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <p class="disclaimer">No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, Pakistan</span>
+        </div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-building"></i> Office Information</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i> Unit # 294, Block B1, Johar Town, Lahore (Postal Code: 54000)</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+        <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+      <div class="staff-grid">
+        <div class="staff-row">
+          <i class="fas fa-at"></i>
+          <strong>General:</strong>
+          <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">admin@arrahmantax.com</a>
+        </div>
+      </div>
+    </div>
+    <p style="color:red"><i class="fas fa-parking me-1"></i><i>Free parking available!</i></p>
+  </div>
+  <div class="col-md-5">
+    <table style="width:300px;margin-left:auto;margin-right:auto">
+      <tr>
+        <th>Hours of Operation:</th>
+      </tr>
+      <tr>
+        <td><i>*With Appointments <u>Only</u></i></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+<hr>
+  <!-- India  Office -->
+<div class="row align-items-center" id="ind">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <p class="disclaimer">No CPA, CGA accountants associated with AR RAHMAN Tax</p>
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span> <b>India Based </b> Team Support</span>
+        </div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-building"></i> Reach Our Team</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i>No. 28, Vaishnavi Nagar, Karumandapam, Trichy - 620001</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-phone"></i> Contact</div>
+      <div class="info-block">
+        <div class="info-item"><i class="fas fa-phone-alt"></i> 416 - 999 - 4448</div>
+        <div class="info-item"><i class="fas fa-fax"></i> Fax: 647 - 977 - 9165</div>
+      </div>
+
+      <div class="section-title"><i class="fas fa-envelope"></i> General Queries</div>
+      <div class="staff-grid">
+        <div class="staff-row">
+          <i class="fas fa-at"></i>
+          <strong>General:</strong>
+          <a href="mailto:admin@arrahmantax.com?subject=General%20Inquiry">admin@arrahmantax.com</a>
+        </div>
+      </div>
+    </div>
+    <p style="color:red"><i class="fas fa-parking me-1"></i><i>Free parking available!</i></p>
+  </div>
+  <div class="col-md-5">
+    <table style="width:300px;margin-left:auto;margin-right:auto">
+      <tr>
+        <th>For Assistance:</th>
+      </tr>
+      <tr>
+        <td><i>Contact Our <u>India Based</u> Team during Office hours </i></td>
+      </tr>
+    </table>
+  </div>
+ 
+
+		
+	
+		
+<hr>
+<!-- Cobourg Office -->
+<div class="row align-items-center">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, - Cobourg, Canada</span>
+          <p class="disclaimer">Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Colombia Office -->
+<!-- <div class="row align-items-center">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, - Bogota, Colombia</span>
+          <p class="disclaimer">Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- UAE Office -->
+<div class="row align-items-center">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, - Dubai, UAE</span>
+          <p class="disclaimer">Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Istanbul Office -->
+<div class="row align-items-center">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div class="contact-card">
+      <div class="location-header">
+        <div class="company-name">
+          <h4>AR RAHMAN Tax & Accounting</h4>
+          <span>Services, - Istanbul, Turkey</span>
+          <p class="disclaimer">Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h4 class="header">Locations on the Map</h4>
+
+<!-- Row 1 (3 offices + Keele & Finch) -->
+<div class="row">
+  <div class="col-md-3">
+    <h5><b>Scarborough Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.5271555396075!2d-79.22724968449869!3d43.7619149791177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d04164c16d47%3A0xd9d14e2e8b5d568a!2sAR%20Rahman%20Tax%20%26%20Accounting%20Services!5e0!3m2!1sen!2sca!4v1604337940686!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="col-md-3">
+    <h5><b>Roseneath Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.901473224924!2d-78.07372162328488!3d44.14727612033491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d5e79e3ad0e571%3A0x901e38f738184d63!2s377%20Montgomery%20Rd%2C%20Roseneath%2C%20ON%20K0K%202X0!5e0!3m2!1sen!2sca!4v1687188160136!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="col-md-3">
+    <h5><b>Mississauga Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10910.300206367021!2d-79.72759292555027!3d43.59060964498272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b41c9471a7cf1%3A0xd2db8a031d2073af!2s1965%20Britannia%20Rd%20W%2C%20Mississauga%2C%20ON%20L5M%204Y4!5e0!3m2!1sen!2sca!4v1706024383723!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- NEW: Keele & Finch Office -->
+  <div class="col-md-3">
+    <h5><b>Keele & Finch Office</b></h5>
+    
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.633919560635!2d-79.49169252488273!3d43.76338287109357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31e1d7b7fdd3%3A0x7f7bd74f30d1b8cb!2s1315%20Finch%20Ave%20W%20Unit%20211%2C%20North%20York%2C%20ON%20M3J%202G6%2C%20Canada!5e0!3m2!1sen!2sca!4v1726508236769!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+<!-- Row 2 (3 offices) -->
+<div class="row">
+  <div class="col-md-4">
+    <h5><b>Philippines Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5483.526980699605!2d123.17339618929991!3d13.631032000678832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18d9d44734d7f%3A0xe1173bad9a76e329!2sZone%207%20Marupit%20Camaligan%20Camarines%20Sur!5e0!3m2!1sen!2sca!4v1705442046836!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="col-md-4">
+    <h5><b>Morocco Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4234811197834!2d-7.606075624884033!3d33.59431508933403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd64e63c35eb%3A0x3a5ecfc6a5375f29!2s5th%20floor%20n10%2C%2099%20Rue%20Pierre%20Parent%2C%20Casablanca%2020110%2C%20Morocco!5e0!3m2!1sen!2sca!4v1730995456714!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="col-md-4">
+    <h5><b>Pakistan Office</b></h5>
+    <iframe height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108812.28357798338!2d74.336738!3d31.541078350000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919056aebcf7d45%3A0xed35417c588bf806!2sLahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2sca!4v1727361217044!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+<div class="col-md-4">
+  <h5><b>India Office</b></h5>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.649153260038!2d78.6622814!3d10.7830764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8f97d2bdbbe7%3A0xf0b2f93fdc49a05a!2s10%C2%B046'59.1%22N%2078%C2%B039'44.2%22E!5e0!3m2!1sen!2sin!4v1727725660000!5m2!1sen!2sin" 
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+</div>
+
+
+
+<!-- Footer -->
+<div id="footer"></div>
+<script src="/js/include.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

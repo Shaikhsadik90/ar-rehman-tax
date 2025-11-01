@@ -1,0 +1,688 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+.whatsapp-float img {
+  width: 35px;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* ---------- Location Announcement Banner ---------- */
+.location-announcement-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #3C2A6B, #5E42A6);
+  color: #fff;
+  padding: 25px 50px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", sans-serif;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.location-announcement-banner:hover {
+  transform: scale(1.02);
+}
+
+/* Icon */
+.announcement-icon {
+  font-size: 60px;
+  margin-right: 25px;
+  animation: bounce 1.5s infinite;
+}
+
+/* Text Area */
+.announcement-text h3 {
+  color: #FFD700; /* Yellow/Gold color */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.announcement-text h5 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.announcement-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f0f0f0;
+  max-width: 600px;
+}
+
+/* Button */
+.btn-learn {
+  background-color: #FFD700;
+  color: #3C2A6B;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-learn:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .location-announcement-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .announcement-icon {
+    margin-bottom: 15px;
+    font-size: 50px;
+  }
+
+  .btn-learn {
+    margin-top: 15px;
+  }
+}
+
+/* Icon animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+
+/* About Section */
+.about-section {
+  background-color: #3c2a6b;
+  color: #fff;
+  padding: 80px 0;
+}
+.section-title {
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+.note {
+  font-style: italic;
+  color: #e0e0e0;
+}
+.about-img {
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Job Alert */
+.job-alert-banner {
+  background: #f4f4f4;
+  padding: 30px;
+  border-top: 3px solid #3c2a6b;
+}
+.job-position {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+.apply-btn,
+.details-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.apply-btn {
+  background: #3c2a6b;
+  color: #fff;
+}
+.apply-btn:hover {
+  background: #5d47a3;
+}
+.details-btn {
+  border: 2px solid #3c2a6b;
+  color: #3c2a6b;
+}
+.details-btn:hover {
+  background: #3c2a6b;
+  color: #fff;
+}
+
+/* Testimonials */
+.testimonials-section {
+  background-color: #fafafa;
+  padding: 60px 0;
+}
+.testimonial-box img {
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.testimonial-video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Clients Section */
+.clients-section {
+  padding: 60px 0;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-track {
+  display: flex;
+  width: calc(250px * 12);
+  animation: scrollClients 25s linear infinite;
+}
+
+.clients-track img {
+  width: 120px;
+  margin: 0 25px;
+  transition: transform 0.3s ease;
+  filter: none; /* ✅ Normal colors (no grayscale) */
+  opacity: 0.95;
+}
+
+.clients-track img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Animation keyframes */
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+/* ======= Footer Styling ======= */
+.footer-section {
+  background-color: rgb(60, 42, 107);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #fbc02f, transparent);
+}
+
+/* Logo & Description */
+.footer-logo {
+  max-width: 220px;
+  transition: transform 0.3s ease;
+}
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+.footer-desc {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.7;
+}
+.highlight {
+  color: #fbc02f;
+  font-weight: 600;
+}
+
+/* Headings */
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fbc02f;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer-heading::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #fbc02f;
+  display: block;
+  margin: 6px auto 0;
+}
+
+
+/* Quick Links */
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+.footer-links a:hover {
+  color: #fbc02f;
+  transform: translateX(3px);
+}
+
+/* Contact Info */
+.footer-contact {
+  margin: 4px 0;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+  transform: translateY(-3px);
+}
+.social-icons .whatsapp:hover { color: #25D366; }
+.social-icons .facebook:hover { color: #1877f2; }
+.social-icons .instagram:hover { color: #E4405F; }
+.social-icons .linkedin:hover { color: #0A66C2; }
+
+/* Bottom Bar */
+.footer-bottom {
+  background-color: rgba(45, 32, 86, 0.9);
+  color: #bbb;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-logo {
+    max-width: 180px;
+  }
+  .footer-heading::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+  background: #f8f7fc;
+  color: #333;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3C2A6B;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  color: #777;
+  font-size: 16px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(60,42,107,0.25);
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-client {
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #FFD700;
+}
+
+.testimonial-client h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #3C2A6B;
+}
+
+.testimonial-client p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Moving Promotional Banner */
+.moving-promotional-banner {
+  background-color: #3C2A6B; /* same purple as footer */
+  color: #FFD700; /* gold text */
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  border-top: 2px solid #FFD700;
+  border-bottom: 2px solid #FFD700;
+}
+
+.moving-text-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveText 25s linear infinite;
+}
+
+.moving-text {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+/* Animation Keyframes */
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ---------- Banner Section ---------- */
+  .home-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 237, 190);
+    padding: 20px 60px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #f1b100;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  /* Logo */
+  .banner-logo {
+    height: 85px;
+    max-width: 100%;
+  }
+
+  /* Middle text */
+  .banner-center {
+    flex: 1;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .banner-text {
+    font-size: 15px;
+    margin: 0;
+    color: #000;
+    line-height: 1.4;
+  }
+
+  .banner-quote {
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .highlight-year {
+    color: #FF6347;
+    font-weight: bold;
+  }
+
+  .highlight-number {
+    color: red;
+    font-family: "Brush Script MT", cursive;
+    font-size: 1.6em;
+  }
+
+  /* Right side */
+  .banner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  .contact-info li {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  .call-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .call-link:hover {
+    color: #007bff;
+  }
+
+  .language-link {
+    color: green;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .language-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  .btn-appoint {
+    background-color: #f1b100;
+    color: #000;
+    border-radius: 25px;
+    padding: 8px 22px;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  .btn-appoint:hover {
+    background-color: #d99a00;
+    color: #fff;
+  }
+
+  /* Responsive fix */
+  @media (max-width: 768px) {
+    .home-banner {
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .banner-right {
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .banner-logo {
+      height: 70px;
+    }
+  }
+
+
+
+
+  /* Gallery Button in About Section */
+.btn-gallery {
+  display: inline-block;
+  background-color: #3C2A6B;
+  color: #FFD700;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-gallery:hover {
+  background-color: #FFD700;
+  color: #3C2A6B;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(60,42,107,0.3);
+}
+
+
+/* 🎥 Video Section Styling */
+.video-section {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.video-box {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+}
+
+.video-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.video-box video {
+  width: 100%;
+  height: 700px; /* 🔹 equal height for both */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.video-box h5 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: rgb(60, 42, 107);
+  font-weight: 600;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .video-box video {
+    height: 220px;
+  }
+  .video-box {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
